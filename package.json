@@ -1,0 +1,26 @@
+{
+  "name": "argollector",
+  "version": "1.0.0",
+  "description": "collect CLI arguments as an object",
+  "main": "index.js",
+  "author": "YanagiEiichi <admin@web-tinker.com>",
+  "scripts": {
+    "test": "cd tests && ./test.sh"
+  },
+  "license": "MIT",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YanagiEiichi/argollector.git"
+  },
+  "keywords": [
+    "CLI",
+    "argv"
+  ],
+  "bugs": {
+    "url": "https://github.com/YanagiEiichi/argollector/issues"
+  },
+  "homepage": "https://github.com/YanagiEiichi/argollector#readme"
+}
