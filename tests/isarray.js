@@ -1,1 +1,1 @@
-console.log(JSON.stringify(require('../index.js') instanceof Array));
+console.log(Array.isArray(require('../index.js')));
