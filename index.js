@@ -1,14 +1,7 @@
-process.argv.slice(2).reduce(function(base, arg) {
-  if(arg[0] === '-') {
-    base = module.exports[arg] || (module.exports[arg] = []);
+process.argv.slice(2).forEach(function(arg) {
+  if (arg.startsWith('-')) {
+    this.current = module.exports[arg] = [];
   } else {
-    [].push.call(base, arg);
+    this.current.push(arg);
   }
-  return base;
-}, module.exports = Object.create([], {
-  length: {
-    value: 0,
-    writable: true,
-    configurable: true
-  }
-}));
+}, { current: module.exports = [] });
